@@ -1,27 +1,16 @@
-<header class="jumbotron">
-    <div class="row">
-
-    <div class="col-md-3">
-        <img src="{{ site.baseurl }}/images/peiFlag.png" width="200px" height="150px">
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>PEI Developers</h1>
+            </div>
+            <div class="col-sm-4">
+                <ul class="social-link">
+                    <li><a href="https://www.meetup.com/PEI-Developers" class="social-link__link meetup">Meetup</a></li>
+                    <li><a href="https://twitter.com/peidevs" class="social-link__link twitter">Twitter</a></li>
+                    <li><a href="https://github.com/{{ site.github_username }}" class="social-link__link github">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="col-md-9">
-        <h1 class="">PEI Developers</h1>
-
-        <a href="https://www.meetup.com/PEI-Developers"><img src="{{ site.baseurl }}/images/meetup.jpeg" alt="meetup @ PEIDevs" class="outside-link"/></a>
-        <a href="https://twitter.com/peidevs" class="twitter-follow-button" data-show-count="false" data-size="large"
-           data-show-screen-name="false">Follow @peidevs</a>
-        <script>!function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + '://platform.twitter.com/widgets.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, 'script', 'twitter-wjs');</script>
-
-        <a href="https://github.com/{{ site.github_username }}"><img src="{{ site.baseurl }}/images/GitHub_Logo.png" alt="Link to Github" class="outside-link"></a>
-    </div>
-    </div>
-
 </header>

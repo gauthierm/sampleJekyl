@@ -1,23 +1,26 @@
 ---
 layout: default
 ---
+<div class="container-flex">
+    <div class="row">
 
-<div class="col-md-6 well well-lg">
-    <h4 class="text-success">Important Links</h4>
-    {% for linkGroup in site.data.group.importantlinks %}
-        <h4>{{ linkGroup.category }}</h4>
-        {% for links in linkGroup.links %}
-            <a href="{{ links.url }}" class="btn btn-block">{{ links.name }}</a>
-        {% endfor %}
-    {% endfor %}
+        <div class="col-md-6">
+            <h4 class="text-success">Important Links</h4>
+            {% for linkGroup in site.data.group.importantlinks %}
+                <h4>{{ linkGroup.category }}</h4>
+                {% for links in linkGroup.links %}
+                    <a href="{{ links.url }}" class="btn btn-block">{{ links.name }}</a>
+                {% endfor %}
+            {% endfor %}
+        </div>
+
+
+        <div class="col-md-6">
+            <h4 class="text-success">Sponsors</h4>
+            {% for sponsor in site.data.group.sponsors %}
+                <a href="{{sponsor.url}}" class="sponsor"><img src="{{sponsor.image}}" alt="{{sponsor.name}}"/></a>
+            {% endfor %}
+        </div>
+
+    </div>
 </div>
-
-
-<div class="col-md-offset-1 col-md-5 well well-lg">
-    <h4 class="text-success">Sponsors</h4>
-    {% for sponsor in site.data.group.sponsors %}
-        <a href="{{sponsor.url}}" class="sponsor"><img src="{{sponsor.image}}" alt="{{sponsor.name}}"/></a>
-    {% endfor %}
-</div>
-
-
